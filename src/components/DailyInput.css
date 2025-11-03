@@ -111,7 +111,7 @@
   font-size: 17px;
   font-weight: 600;
   color: white;
-  background: var(--accent-color);
+  background: linear-gradient(135deg, var(--accent-color), #ff6b6b);
   border: none;
   border-radius: 12px;
   cursor: pointer;
@@ -122,6 +122,7 @@
 .save-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(0, 123, 255, 0.3);
+  filter: brightness(1.1);
 }
 
 .save-button:active {
@@ -129,7 +130,7 @@
 }
 
 .save-button.saved {
-  background: #34c759;
+  background: linear-gradient(135deg, #34c759, #30d158);
   animation: pulse 0.5s ease;
 }
 

@@ -52,6 +52,7 @@
 .months-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 24px;
   flex: 1;
   align-content: center;
@@ -174,30 +175,52 @@
 @media (max-width: 1400px) {
   .months-grid {
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
   }
 }
 
 @media (max-width: 1024px) {
   .months-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
   }
 }
 
 @media (max-width: 768px) {
   .year-heatmap {
-    padding: 20px;
-    border-radius: 0;
+    padding: 16px;
+    border-radius: 16px;
   }
 
   .months-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 12px;
   }
 
   .heatmap-header {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .heatmap-header h2 {
+    font-size: 20px;
+  }
+
+  .legend {
+    font-size: 10px;
+  }
+
+  .legend-cell {
+    width: 8px;
+    height: 8px;
+  }
+
+  .month-label {
+    font-size: 11px;
   }
 
   .day-cell {
@@ -207,24 +230,5 @@
 
   .month-grid {
     gap: 2px;
-  }
-}
-
-@media (max-width: 480px) {
-  .year-heatmap {
-    padding: 16px;
-  }
-
-  .heatmap-header h2 {
-    font-size: 24px;
-  }
-
-  .legend {
-    font-size: 11px;
-  }
-
-  .legend-cell {
-    width: 10px;
-    height: 10px;
   }
 }
