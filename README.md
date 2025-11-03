@@ -1,4 +1,4 @@
-# Rhythm <img src="public/icon.png" alt="Rhythm Icon" width="32" height="32">
+# Rhythm <img src="public/logo.png" alt="Rhythm Icon" width="32" height="32">
 
 A minimal, elegant self-tracking app for monitoring your daily Energy, Clarity, and Mood throughout the year.
 

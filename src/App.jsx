@@ -61,6 +61,7 @@ function App() {
         <div className="header-content">
           <div className="logo">
             <h1>Rhythm</h1>
+            <img src="./logo.png" alt="Rhythm Logo" className="logo-image" />
           </div>
           <div className="header-actions">
             <button
